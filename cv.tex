@@ -47,6 +47,10 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+% Make the entire name uniform in color
+\renewcommand*{\headerfirstnamestyle}[1]{{\fontsize{20pt}{1.2em}\headerfont\bfseries\color{text} #1}}
+\renewcommand*{\headerlastnamestyle}[1]{{\fontsize{20pt}{1.2em}\headerfont\bfseries\color{text} #1}}
+
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -55,14 +59,13 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
 \name{TRAN}{VO NGOC TRUONG}
-\position{Intern Backend Engineer}
+\position{Backend Developer Intern}
 \address{Dong Nai, Vietnam}
 
 \mobile{(+84) 332 210 729}
 \email{truongtvn24@gmail.com}
-\homepage{www.playdber.me}
 \github{truongtvn24}
-\linkedin{tranthanhtuankhtn}
+\linkedin{tranvongoctruong4}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -92,6 +95,7 @@
 %-------------------------------------------------------------------------------
 \input{resume/summary.tex}
 \input{resume/education.tex}
+\input{resume/experience.tex}
 \input{resume/project.tex}
 \input{resume/skill.tex}
 
